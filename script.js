@@ -1,118 +1,103 @@
 document.documentElement.classList.add("js-enabled");
 
-const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelector(".nav-links");
-const navigationLinks = document.querySelectorAll(
-    ".nav-links a"
-);
-const observedSections = document.querySelectorAll(
-    "[data-observe]"
-);
-const processLinks = document.querySelectorAll(
-    ".process-list a"
-);
-const currentYear = document.querySelector("#current-year");
+const menuButton = document.querySelector(".menu-button");
+const navigation = document.querySelector(".nav-links");
+const navigationLinks = document.querySelectorAll(".nav-links a");
+const observedSections = document.querySelectorAll("main section[id]");
+const revealElements = document.querySelectorAll(".editorial-section");
+const yearElement = document.querySelector("#current-year");
 
-function closeNavigation() {
-    navLinks.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
 }
 
-navToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("is-open");
+function closeMenu() {
+    if (!menuButton || !navigation) {
+        return;
+    }
 
-    navToggle.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-    );
-});
+    menuButton.setAttribute("aria-expanded", "false");
+    navigation.classList.remove("open");
+    document.body.classList.remove("menu-open");
+}
+
+if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+        const isOpen =
+            menuButton.getAttribute("aria-expanded") === "true";
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+        );
+
+        navigation.classList.toggle("open", !isOpen);
+        document.body.classList.toggle("menu-open", !isOpen);
+    });
+}
 
 navigationLinks.forEach((link) => {
-    link.addEventListener("click", closeNavigation);
-});
-
-document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-        closeNavigation();
-        navToggle.focus();
-    }
-});
-
-document.addEventListener("click", (event) => {
-    const clickedInsideNavigation =
-        event.target.closest(".navbar");
-
-    if (!clickedInsideNavigation) {
-        closeNavigation();
-    }
+    link.addEventListener("click", closeMenu);
 });
 
 window.addEventListener("resize", () => {
     if (window.innerWidth > 720) {
-        closeNavigation();
+        closeMenu();
     }
 });
 
-const sectionObserver = new IntersectionObserver(
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeMenu();
+    }
+});
+
+const navigationObserver = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (!entry.isIntersecting) {
                 return;
             }
 
-            entry.target.classList.add("is-visible");
-
-            const sectionId = entry.target.id;
-
             navigationLinks.forEach((link) => {
-                const isCurrent =
-                    link.dataset.section === sectionId;
+                const target = link.getAttribute("href");
+                const matchesSection =
+                    target === `#${entry.target.id}`;
 
                 link.classList.toggle(
-                    "is-active",
-                    isCurrent
+                    "active",
+                    matchesSection
                 );
-
-                if (isCurrent) {
-                    link.setAttribute(
-                        "aria-current",
-                        "location"
-                    );
-                } else {
-                    link.removeAttribute("aria-current");
-                }
             });
-
-            updateProcessPhase(sectionId);
         });
     },
     {
-        rootMargin: "-25% 0px -55% 0px",
+        rootMargin: "-35% 0px -55% 0px",
         threshold: 0
     }
 );
 
 observedSections.forEach((section) => {
-    sectionObserver.observe(section);
+    navigationObserver.observe(section);
 });
 
-function updateProcessPhase(sectionId) {
-    const phaseMap = {
-        about: "discover",
-        skills: "design",
-        projects: "execute",
-        certifications: "evaluate",
-        contact: null
-    };
+const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                return;
+            }
 
-    const activePhase = phaseMap[sectionId];
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        });
+    },
+    {
+        threshold: 0.12
+    }
+);
 
-    processLinks.forEach((link) => {
-        link.classList.toggle(
-            "is-active",
-            link.dataset.phase === activePhase
-        );
-    });
-}
-
-currentYear.textContent = new Date().getFullYear();
+revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
+});

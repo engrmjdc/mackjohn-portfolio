@@ -10,16 +10,17 @@
 
     <meta
         name="description"
-        content="Portfolio of Mack John Dela Cruz, AI Test Engineer and Test Automation Engineer specializing in automation and AI quality."
+        content="Portfolio of Mack John Dela Cruz, AI Test Engineer, Test Automation Engineer, and Licensed Electronics Engineer."
     >
 
-    <meta name="theme-color" content="#07111f">
+    <meta name="theme-color" content="#ffffff">
 
     <title>
         Mack John Dela Cruz | AI Test Engineer
     </title>
 
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,883 +29,485 @@
     </a>
 
     <header class="site-header">
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="brand" href="#home">
-                <span class="brand-mark" aria-hidden="true">
-                    M
-                </span>
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo-link" href="#home" aria-label="Mack John Dela Cruz home">
+                <svg
+                    class="logo"
+                    viewBox="0 0 150 54"
+                    role="img"
+                    aria-label="MJDC logo"
+                >
+                    <path
+                        class="logo-dark"
+                        d="M5 43V10h8l11 19 11-19h8v33h-8V24L27 38h-6L13 24v19Z"
+                    />
 
-                <span class="brand-copy">
-                    <strong>Mack Dela Cruz</strong>
-                    <small>Quality Engineering</small>
-                </span>
+                    <path
+                        class="logo-dark"
+                        d="M48 10h8v23c0 7-4 11-12 11h-4v-7h3c3 0 5-2 5-5Z"
+                    />
+
+                    <path
+                        class="logo-blue"
+                        d="M61 10h15c12 0 20 6 20 17s-8 16-20 16H61Zm8 7v19h7c7 0 12-3 12-9s-5-10-12-10Z"
+                    />
+
+                    <path
+                        class="logo-dark"
+                        d="M119 9c8 0 14 3 18 8l-6 5c-3-4-7-6-12-6-7 0-13 4-13 11s6 10 13 10c5 0 9-2 12-6l6 5c-4 5-10 8-18 8-13 0-22-7-22-17S106 9 119 9Z"
+                    />
+
+                    <path
+                        class="logo-blue logo-bridge"
+                        d="M54 23h13v7H54Zm36 0h14v7H90Z"
+                    />
+                </svg>
             </a>
 
             <button
-                class="nav-toggle"
+                class="menu-button"
                 type="button"
                 aria-expanded="false"
-                aria-controls="nav-links"
+                aria-controls="navigation-links"
             >
                 <span>Menu</span>
 
-                <span
-                    class="nav-toggle-bars"
-                    aria-hidden="true"
-                >
-                    <i></i>
+                <span class="menu-lines" aria-hidden="true">
                     <i></i>
                     <i></i>
                 </span>
             </button>
 
-            <ul class="nav-links" id="nav-links">
-                <li>
-                    <a href="#about" data-section="about">
-                        Profile
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#skills" data-section="skills">
-                        Capabilities
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#projects" data-section="projects">
-                        Case Study
-                    </a>
-                </li>
-
-                <li>
-                    <a
-                        href="#certifications"
-                        data-section="certifications"
-                    >
-                        Training
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact" data-section="contact">
-                        Contact
-                    </a>
-                </li>
+            <ul class="nav-links" id="navigation-links">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Work</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content">
-        <!-- Hero -->
-        <section class="hero" id="home">
-            <div class="page-container hero-grid">
-                <div class="hero-copy">
-                    <p class="system-label">
-                        QA Engineering / AI Systems
-                    </p>
-
-                    <h1>
-                        Building confidence in
-                        <span>software and AI.</span>
-                    </h1>
-
-                    <p class="hero-role">
-                        Mack John Dela Cruz
-                    </p>
-
-                    <p class="hero-title">
-                        AI Test Engineer · Test Automation Engineer
-                        · Licensed Electronics Engineer
-                    </p>
-
-                    <p class="hero-description">
-                        I design manual and automated tests for
-                        enterprise, cloud-based, and AI-powered
-                        applications, with a focus on product risk,
-                        user impact, and reliable evidence.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a
-                            class="button button-primary"
-                            href="#projects"
-                        >
-                            Explore test projects
-                            <span aria-hidden="true">↘</span>
-                        </a>
-
-                        <a
-                            class="button button-secondary"
-                            href="https://www.linkedin.com/in/mackjohn-delacruz/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            LinkedIn
-                            <span aria-hidden="true">↗</span>
-                        </a>
-                    </div>
-                </div>
-
-                <aside
-                    class="quality-panel"
-                    aria-label="Professional status summary"
-                >
-                    <div class="panel-header">
-                        <div>
-                            <p class="panel-kicker">
-                                Engineer status
-                            </p>
-
-                            <h2>Quality profile</h2>
-                        </div>
-
-                        <span class="status-indicator">
-                            <span
-                                class="status-dot"
-                                aria-hidden="true"
-                            ></span>
-
-                            Available
-                        </span>
-                    </div>
-
-                    <dl class="status-grid">
-                        <div>
-                            <dt>Experience</dt>
-                            <dd>2+ years</dd>
-                        </div>
-
-                        <div>
-                            <dt>Automation suite</dt>
-                            <dd>11 tests</dd>
-                        </div>
-
-                        <div>
-                            <dt>Latest CI run</dt>
-                            <dd class="passing-value">
-                                Passing
-                            </dd>
-                        </div>
-
-                        <div>
-                            <dt>Primary domain</dt>
-                            <dd>AI quality</dd>
-                        </div>
-                    </dl>
-
-                    <div class="panel-divider"></div>
-
-                    <div class="focus-area">
-                        <p class="panel-kicker">
-                            Current focus
-                        </p>
-
-                        <ul>
-                            <li>
-                                <span>01</span>
-                                UI test automation
-                            </li>
-
-                            <li>
-                                <span>02</span>
-                                Conversational AI testing
-                            </li>
-
-                            <li>
-                                <span>03</span>
-                                Generative AI evaluation
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="panel-footer">
-                        <span>Last verified</span>
-                        <strong>GitHub Actions</strong>
-                    </div>
-                </aside>
-            </div>
-        </section>
-
-        <!-- Quality process -->
-        <nav
-            class="process-strip"
-            aria-label="Quality engineering process"
-        >
-            <div class="page-container process-list">
-                <a href="#about" data-phase="discover">
-                    <span>01</span>
-                    Discover
-                </a>
-
-                <a href="#skills" data-phase="design">
-                    <span>02</span>
-                    Design
-                </a>
-
-                <a href="#projects" data-phase="automate">
-                    <span>03</span>
-                    Automate
-                </a>
-
-                <a href="#projects" data-phase="execute">
-                    <span>04</span>
-                    Execute
-                </a>
-
-                <a href="#certifications" data-phase="evaluate">
-                    <span>05</span>
-                    Evaluate
-                </a>
-            </div>
-        </nav>
-
-        <!-- About -->
-        <section
-            class="section section-light"
-            id="about"
-            data-observe
-        >
-            <div class="page-container">
-                <header class="section-header">
-                    <div>
-                        <p class="section-number">01 / Profile</p>
-
-                        <h2>
-                            Engineering judgment behind
-                            every test.
-                        </h2>
-                    </div>
-
-                    <p class="section-introduction">
-                        Testing is most valuable when it explains
-                        risk clearly, protects important user
-                        journeys, and produces evidence a team
-                        can act on.
-                    </p>
-                </header>
-
-                <div class="profile-layout">
-                    <div class="profile-story">
-                        <p class="lead-paragraph">
-                            I’m an AI Test Engineer and Test
-                            Automation Engineer with over two
-                            years of experience designing manual
-                            and automated tests for enterprise,
-                            cloud-based, and AI-powered
-                            applications.
-                        </p>
-
-                        <p>
-                            My work includes functional testing,
-                            UI and API automation, conversational
-                            AI validation, and generative AI
-                            quality assurance. I evaluate both
-                            expected behavior and the risks that
-                            appear when real users interact with
-                            complex systems.
-                        </p>
-
-                        <p>
-                            As a Licensed Electronics Engineer,
-                            I bring a structured engineering
-                            mindset to software quality,
-                            troubleshooting, and test design.
-                        </p>
-                    </div>
-
-                    <div class="principles">
-                        <article>
-                            <span>01</span>
-
-                            <div>
-                                <h3>Test the risk</h3>
-
-                                <p>
-                                    Prioritize scenarios by user
-                                    impact and business consequence.
-                                </p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <span>02</span>
-
-                            <div>
-                                <h3>Automate with purpose</h3>
-
-                                <p>
-                                    Automate repeatable checks that
-                                    provide fast and dependable
-                                    feedback.
-                                </p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <span>03</span>
-
-                            <div>
-                                <h3>Report useful evidence</h3>
-
-                                <p>
-                                    Make failures understandable
-                                    through clear results, traces,
-                                    screenshots, and defect details.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section
-            class="section section-dark"
-            id="skills"
-            data-observe
-        >
-            <div class="page-container">
-                <header class="section-header">
-                    <div>
-                        <p class="section-number">
-                            02 / Capabilities
-                        </p>
-
-                        <h2>
-                            Quality coverage across
-                            multiple test layers.
-                        </h2>
-                    </div>
-
-                    <p class="section-introduction">
-                        My experience combines hands-on test
-                        execution, automation engineering, AI
-                        evaluation, and delivery tooling.
-                    </p>
-                </header>
-
-                <div class="capability-matrix">
-                    <article class="capability-card">
-                        <header>
-                            <span class="capability-code">
-                                QA / 01
-                            </span>
-
-                            <span class="layer-status">
-                                Core
-                            </span>
-                        </header>
-
-                        <h3>Quality Assurance</h3>
-
-                        <p>
-                            Test analysis and execution for
-                            product behavior and user journeys.
-                        </p>
-
-                        <ul>
-                            <li>Manual Testing</li>
-                            <li>Functional Testing</li>
-                            <li>Regression Testing</li>
-                            <li>Exploratory Testing</li>
-                            <li>Test Case Design</li>
-                            <li>Defect Reporting</li>
-                        </ul>
-                    </article>
-
-                    <article class="capability-card">
-                        <header>
-                            <span class="capability-code">
-                                AUTO / 02
-                            </span>
-
-                            <span class="layer-status">
-                                Applied
-                            </span>
-                        </header>
-
-                        <h3>Test Automation</h3>
-
-                        <p>
-                            Maintainable automated checks with
-                            reusable architecture and CI feedback.
-                        </p>
-
-                        <ul>
-                            <li>Playwright</li>
-                            <li>Selenium</li>
-                            <li>Python</li>
-                            <li>pytest</li>
-                            <li>Page Object Model</li>
-                            <li>GitHub Actions</li>
-                        </ul>
-                    </article>
-
-                    <article class="capability-card">
-                        <header>
-                            <span class="capability-code">
-                                AI / 03
-                            </span>
-
-                            <span class="layer-status">
-                                Focus
-                            </span>
-                        </header>
-
-                        <h3>AI Quality</h3>
-
-                        <p>
-                            Evaluation of conversational and
-                            generative AI behavior beyond
-                            deterministic outputs.
-                        </p>
-
-                        <ul>
-                            <li>Conversational AI Testing</li>
-                            <li>Generative AI Testing</li>
-                            <li>Prompt Validation</li>
-                            <li>Response Evaluation</li>
-                        </ul>
-                    </article>
-
-                    <article class="capability-card">
-                        <header>
-                            <span class="capability-code">
-                                OPS / 04
-                            </span>
-
-                            <span class="layer-status">
-                                Toolkit
-                            </span>
-                        </header>
-
-                        <h3>Platforms and Delivery</h3>
-
-                        <p>
-                            Tools supporting test management,
-                            services, automation, and collaboration.
-                        </p>
-
-                        <ul>
-                            <li>Jira</li>
-                            <li>Postman</li>
-                            <li>ServiceNow</li>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project -->
-        <section
-            class="section section-project"
-            id="projects"
-            data-observe
-        >
-            <div class="page-container">
-                <header class="section-header">
-                    <div>
-                        <p class="section-number">
-                            03 / Test Case Study
-                        </p>
-
-                        <h2>
-                            E-commerce automation with
-                            measurable evidence.
-                        </h2>
-                    </div>
-
-                    <p class="section-introduction">
-                        A complete browser automation project
-                        covering authentication, inventory,
-                        shopping-cart, and checkout risks.
-                    </p>
-                </header>
-
-                <article class="case-study">
-                    <header class="case-study-header">
-                        <div>
-                            <p class="case-id">
-                                CASE / PW-001
-                            </p>
-
-                            <h3>
-                                Playwright E-commerce
-                                Test Automation
-                            </h3>
-                        </div>
-
-                        <img
-                            class="ci-badge"
-                            src="https://github.com/engrmjdc/playwright-ecommerce-testing/actions/workflows/playwright-tests.yml/badge.svg"
-                            alt="Playwright test workflow status"
-                        >
-                    </header>
-
-                    <div class="case-study-body">
-                        <div class="case-narrative">
-                            <section>
-                                <p class="case-label">
-                                    Objective
-                                </p>
-
-                                <p>
-                                    Build a maintainable end-to-end
-                                    test framework for SauceDemo and
-                                    validate its critical purchasing
-                                    journey across positive and
-                                    negative scenarios.
-                                </p>
-                            </section>
-
-                            <section>
-                                <p class="case-label">
-                                    Risks covered
-                                </p>
-
-                                <div class="risk-grid">
-                                    <span>
-                                        Authentication failure
-                                    </span>
-
-                                    <span>
-                                        Incorrect product order
-                                    </span>
-
-                                    <span>
-                                        Inaccurate cart state
-                                    </span>
-
-                                    <span>
-                                        Invalid checkout data
-                                    </span>
-                                </div>
-                            </section>
-
-                            <section>
-                                <p class="case-label">
-                                    Engineering decisions
-                                </p>
-
-                                <ul class="decision-list">
-                                    <li>
-                                        Page Object Model centralizes
-                                        selectors and user actions.
-                                    </li>
-
-                                    <li>
-                                        Pytest fixtures provide
-                                        reusable authenticated setup.
-                                    </li>
-
-                                    <li>
-                                        Parameterized tests cover
-                                        multiple validation datasets.
-                                    </li>
-
-                                    <li>
-                                        GitHub Actions runs the suite
-                                        in a clean Linux environment.
-                                    </li>
-
-                                    <li>
-                                        HTML reports, screenshots,
-                                        video, and traces support
-                                        failure investigation.
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <div class="case-actions">
-                                <a
-                                    class="button button-primary"
-                                    href="https://github.com/engrmjdc/playwright-ecommerce-testing"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Review repository
-                                    <span aria-hidden="true">↗</span>
-                                </a>
-
-                                <a
-                                    class="inline-link"
-                                    href="https://www.saucedemo.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Open test application
-                                    <span aria-hidden="true">↗</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <aside class="execution-report">
-                            <div class="report-heading">
-                                <div>
-                                    <p class="case-label">
-                                        Latest execution
-                                    </p>
-
-                                    <h4>Regression suite</h4>
-                                </div>
-
-                                <span class="report-status">
-                                    Passed
-                                </span>
-                            </div>
-
-                            <div class="execution-score">
-                                <strong>11</strong>
-                                <span>/ 11 passed</span>
-                            </div>
-
-                            <div
-                                class="progress-track"
-                                aria-label="100 percent of tests passed"
-                            >
-                                <span></span>
-                            </div>
-
-                            <dl class="execution-metrics">
-                                <div>
-                                    <dt>Authentication</dt>
-                                    <dd>4 tests</dd>
-                                </div>
-
-                                <div>
-                                    <dt>Inventory</dt>
-                                    <dd>1 test</dd>
-                                </div>
-
-                                <div>
-                                    <dt>Shopping cart</dt>
-                                    <dd>2 tests</dd>
-                                </div>
-
-                                <div>
-                                    <dt>Checkout</dt>
-                                    <dd>4 tests</dd>
-                                </div>
-                            </dl>
-
-                            <div class="tool-chain">
-                                <p class="case-label">
-                                    Execution chain
-                                </p>
-
-                                <ol>
-                                    <li>
-                                        <span>01</span>
-                                        Git push
-                                    </li>
-
-                                    <li>
-                                        <span>02</span>
-                                        Install dependencies
-                                    </li>
-
-                                    <li>
-                                        <span>03</span>
-                                        Run Chromium tests
-                                    </li>
-
-                                    <li>
-                                        <span>04</span>
-                                        Publish evidence
-                                    </li>
-                                </ol>
-                            </div>
-                        </aside>
-                    </div>
-
-                    <footer class="case-study-footer">
-                        <span>Python</span>
-                        <span>Playwright</span>
-                        <span>pytest</span>
-                        <span>GitHub Actions</span>
-                        <span>HTML Reporting</span>
-                    </footer>
-                </article>
-            </div>
-        </section>
-
-        <!-- Certifications -->
-        <section
-            class="section section-light"
-            id="certifications"
-            data-observe
-        >
-            <div class="page-container">
-                <header class="section-header">
-                    <div>
-                        <p class="section-number">
-                            04 / Training
-                        </p>
-
-                        <h2>
-                            Learning applied to quality
-                            engineering.
-                        </h2>
-                    </div>
-
-                    <p class="section-introduction">
-                        Formal training supporting my work in
-                        automation engineering and AI quality.
-                    </p>
-                </header>
-
-                <div class="training-timeline">
-                    <article>
-                        <div class="timeline-marker">
-                            <span>01</span>
-                        </div>
-
-                        <div class="training-category">
-                            AI Automation
-                        </div>
-
-                        <div class="training-details">
-                            <h3>AI Automation Training</h3>
-                            <p>Lexmark and TESDA</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="timeline-marker">
-                            <span>02</span>
-                        </div>
-
-                        <div class="training-category">
-                            Test Automation
-                        </div>
-
-                        <div class="training-details">
-                            <h3>
-                                Automation Testing ASE Bootcamp
-                            </h3>
-
-                            <p>Accenture</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="timeline-marker">
-                            <span>03</span>
-                        </div>
-
-                        <div class="training-category">
-                            Artificial Intelligence
-                        </div>
-
-                        <div class="training-details">
-                            <h3>
-                                Agentic AI and Generative AI
-                                Training
-                            </h3>
-
-                            <p>Accenture</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section
-            class="section contact-section"
-            id="contact"
-            data-observe
-        >
-            <div class="page-container contact-layout">
-                <div class="contact-heading">
-                    <p class="section-number">
-                        05 / Contact
-                    </p>
-
-                    <h2>
-                        Let’s improve software quality
-                        together.
-                    </h2>
-
-                    <p>
-                        I’m interested in opportunities involving
-                        software quality assurance, test
-                        automation, conversational AI, and
-                        generative AI testing.
-                    </p>
-                </div>
-
-                <div class="contact-directory">
-                    <p class="directory-label">
-                        Communication channels
-                    </p>
-
-                    <a
-                        href="mailto:mjdelacruz.work@gmail.com"
-                    >
-                        <span>
-                            <small>Email</small>
-                            mjdelacruz.work@gmail.com
-                        </span>
-
-                        <strong aria-hidden="true">↗</strong>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <p class="eyebrow hero-eyebrow">
+                    Quality / Automation / AI / A more reliable tomorrow
+                </p>
+
+                <h1>
+                    Mack John<br>
+                    Dela Cruz
+                </h1>
+
+                <p class="professional-title">
+                    AI Test Engineer
+                    <span aria-hidden="true">|</span>
+                    Test Automation Engineer
+                    <span aria-hidden="true">|</span>
+                    Licensed Electronics Engineer
+                </p>
+
+                <span class="title-rule" aria-hidden="true"></span>
+
+                <h2>Quality for what’s next.</h2>
+
+                <p class="hero-description">
+                    I build intelligent, reliable, and scalable test solutions
+                    that help teams ship with confidence. With a background in
+                    electronics engineering and a focus on AI and test automation,
+                    I bridge quality, technology, and real-world impact.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">
+                        View selected work
+                        <span aria-hidden="true">→</span>
                     </a>
 
                     <a
+                        class="button button-outline"
                         href="https://www.linkedin.com/in/mackjohn-delacruz/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>
-                            <small>LinkedIn</small>
-                            Connect professionally
-                        </span>
-
-                        <strong aria-hidden="true">↗</strong>
-                    </a>
-
-                    <a
-                        href="https://github.com/engrmjdc"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>
-                            <small>GitHub</small>
-                            Review my repositories
-                        </span>
-
-                        <strong aria-hidden="true">↗</strong>
+                        LinkedIn
+                        <span aria-hidden="true">↗</span>
                     </a>
                 </div>
             </div>
+
+            <figure class="hero-visual">
+                <img
+                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=85"
+                    alt="Modern geometric concrete architecture"
+                >
+
+                <figcaption class="image-message">
+                    Better software<br>
+                    Brighter possibilities
+                </figcaption>
+
+                <span class="image-caption" aria-hidden="true">
+                    Systems<br>
+                    People<br>
+                    Progress
+                </span>
+            </figure>
+        </section>
+
+        <section class="editorial-section container" id="about">
+            <div class="section-heading">
+                <p class="section-label">About</p>
+
+                <h2>
+                    Engineering confidence through quality.
+                </h2>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    I’m Mack John Dela Cruz, an AI Test Engineer, Test
+                    Automation Engineer, and Licensed Electronics Engineer.
+                    I enjoy solving complex problems through automation,
+                    AI, and reliable engineering practices. My goal is to
+                    help teams build better software and systems that make
+                    a positive impact.
+                </p>
+
+                <dl class="profile-facts">
+                    <div>
+                        <dt>2+ years</dt>
+                        <dd>Professional experience</dd>
+                    </div>
+
+                    <div>
+                        <dt>AI and test automation</dt>
+                        <dd>Key focus areas</dd>
+                    </div>
+
+                    <div>
+                        <dt>Licensed Electronics Engineer</dt>
+                        <dd>Professional license</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="editorial-section container" id="skills">
+            <div class="section-heading">
+                <p class="section-label">Capabilities</p>
+
+                <h2>From strategy to execution.</h2>
+
+                <p class="section-summary">
+                    A well-rounded skill set for delivering reliable,
+                    scalable, and intelligent quality solutions.
+                </p>
+            </div>
+
+            <div class="capability-grid">
+                <article>
+                    <span class="item-number">01</span>
+                    <h3>Quality Assurance</h3>
+
+                    <ul>
+                        <li>Test planning and strategy</li>
+                        <li>Manual and exploratory testing</li>
+                        <li>Requirements analysis</li>
+                        <li>Defect tracking and reporting</li>
+                        <li>Quality process improvement</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <span class="item-number">02</span>
+                    <h3>Test Automation</h3>
+
+                    <ul>
+                        <li>Automated test framework design</li>
+                        <li>End-to-end test automation</li>
+                        <li>API and UI testing</li>
+                        <li>CI/CD integration</li>
+                        <li>Maintainable automated tests</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <span class="item-number">03</span>
+                    <h3>AI Testing</h3>
+
+                    <ul>
+                        <li>Testing AI-powered features</li>
+                        <li>Prompt and response validation</li>
+                        <li>Data and model output evaluation</li>
+                        <li>Reliability and safety testing</li>
+                        <li>Conversational AI testing</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <span class="item-number">04</span>
+                    <h3>Platforms and Tools</h3>
+
+                    <ul>
+                        <li>Playwright and Selenium</li>
+                        <li>Python and pytest</li>
+                        <li>Postman and Jira</li>
+                        <li>ServiceNow</li>
+                        <li>Git and GitHub Actions</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="editorial-section container" id="projects">
+            <div class="section-heading">
+                <p class="section-label">Featured project</p>
+
+                <h2>
+                    Playwright E-commerce Test Automation
+                </h2>
+
+                <p class="section-summary">
+                    An end-to-end test automation project for an
+                    e-commerce web application using Playwright.
+                </p>
+
+                <a
+                    class="button button-outline"
+                    href="https://github.com/engrmjdc/playwright-ecommerce-testing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View repository
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <div class="project-content">
+                <div class="project-metrics">
+                    <div>
+                        <strong>11</strong>
+                        <span>Automated scenarios</span>
+                    </div>
+
+                    <div>
+                        <strong>4</strong>
+                        <span>Test areas</span>
+                    </div>
+
+                    <div>
+                        <strong>CI passing</strong>
+                        <span>Build status</span>
+                    </div>
+                </div>
+
+                <div class="project-details">
+                    <div>
+                        <h3>Objective</h3>
+
+                        <p>
+                            Automate critical user journeys in an e-commerce
+                            application to ensure core functionality works as
+                            expected and reduce repetitive manual testing.
+                        </p>
+
+                        <h3>Selected engineering decisions</h3>
+
+                        <ul>
+                            <li>
+                                Used Playwright with Python for reliable,
+                                maintainable browser automation.
+                            </li>
+
+                            <li>
+                                Organized tests by user journey and test area.
+                            </li>
+
+                            <li>
+                                Applied the Page Object Model for reusable
+                                selectors and interactions.
+                            </li>
+
+                            <li>
+                                Integrated GitHub Actions for automatic
+                                test execution.
+                            </li>
+
+                            <li>
+                                Added screenshots, videos, traces, and HTML
+                                reports for failure evidence.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Technologies</h3>
+
+                        <ul class="technology-list">
+                            <li>Playwright</li>
+                            <li>Python</li>
+                            <li>pytest</li>
+                            <li>Page Object Model</li>
+                            <li>GitHub Actions</li>
+                            <li>HTML Reports</li>
+                        </ul>
+
+                        <img
+                            class="workflow-badge"
+                            src="https://github.com/engrmjdc/playwright-ecommerce-testing/actions/workflows/playwright-tests.yml/badge.svg"
+                            alt="Playwright Tests workflow status"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="editorial-section container"
+            id="certifications"
+        >
+            <div class="section-heading">
+                <p class="section-label">Certifications</p>
+
+                <h2>
+                    Continuous learning for a bigger impact.
+                </h2>
+            </div>
+
+            <div class="certification-grid">
+                <article>
+                    <span class="item-number">01</span>
+
+                    <h3>AI Automation Training</h3>
+
+                    <p class="organization">Lexmark and TESDA</p>
+
+                    <p>
+                        Training on AI tools and automation workflows for
+                        real-world applications.
+                    </p>
+                </article>
+
+                <article>
+                    <span class="item-number">02</span>
+
+                    <h3>Automation Testing ASE Bootcamp</h3>
+
+                    <p class="organization">Accenture</p>
+
+                    <p>
+                        Intensive training in automated testing practices,
+                        tools, and reusable frameworks.
+                    </p>
+                </article>
+
+                <article>
+                    <span class="item-number">03</span>
+
+                    <h3>Agentic AI and Generative AI Training</h3>
+
+                    <p class="organization">Accenture</p>
+
+                    <p>
+                        Training in agentic AI concepts, generative AI
+                        applications, and practical use cases.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="editorial-section container" id="contact">
+            <div class="section-heading">
+                <p class="section-label">Contact</p>
+
+                <h2>Let’s build what’s next.</h2>
+
+                <p class="section-summary">
+                    Open to opportunities, collaborations, and meaningful
+                    conversations about software quality, automation,
+                    and AI testing.
+                </p>
+            </div>
+
+            <address class="contact-grid">
+                <a href="mailto:mjdelacruz.work@gmail.com">
+                    <span>Email</span>
+                    <strong>mjdelacruz.work@gmail.com</strong>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/mackjohn-delacruz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>LinkedIn</span>
+                    <strong>Connect with me ↗</strong>
+                </a>
+
+                <a
+                    href="https://github.com/engrmjdc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>GitHub</span>
+                    <strong>View my repositories ↗</strong>
+                </a>
+            </address>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="page-container footer-layout">
-            <div>
-                <strong>Mack John Dela Cruz</strong>
-                <span>AI Test Engineer</span>
+        <div class="footer-content container">
+            <div class="footer-brand">
+                <svg
+                    class="logo footer-logo"
+                    viewBox="0 0 150 54"
+                    aria-hidden="true"
+                >
+                    <path
+                        class="logo-dark"
+                        d="M5 43V10h8l11 19 11-19h8v33h-8V24L27 38h-6L13 24v19Z"
+                    />
+
+                    <path
+                        class="logo-dark"
+                        d="M48 10h8v23c0 7-4 11-12 11h-4v-7h3c3 0 5-2 5-5Z"
+                    />
+
+                    <path
+                        class="logo-blue"
+                        d="M61 10h15c12 0 20 6 20 17s-8 16-20 16H61Zm8 7v19h7c7 0 12-3 12-9s-5-10-12-10Z"
+                    />
+
+                    <path
+                        class="logo-dark"
+                        d="M119 9c8 0 14 3 18 8l-6 5c-3-4-7-6-12-6-7 0-13 4-13 11s6 10 13 10c5 0 9-2 12-6l6 5c-4 5-10 8-18 8-13 0-22-7-22-17S106 9 119 9Z"
+                    />
+
+                    <path
+                        class="logo-blue logo-bridge"
+                        d="M54 23h13v7H54Zm36 0h14v7H90Z"
+                    />
+                </svg>
+
+                <div>
+                    <strong>Mack John Dela Cruz</strong>
+                    <span>
+                        AI Test Engineer · Test Automation Engineer
+                    </span>
+                </div>
             </div>
 
-            <p>
-                Quality verified
-                <span class="footer-status">
-                    <i aria-hidden="true"></i>
-                    Passing
-                </span>
+            <p class="footer-message">
+                Quality builds opportunity.
             </p>
 
             <p>
-                © <span id="current-year">2026</span>
+                © <span id="current-year"></span> Mack John Dela Cruz
             </p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
