@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1044 360" font-family="system-ui,sans-serif">
+  <rect width="1044" height="360" fill="#dce1d5"/>
+  <path d="M0 360L360 0M154 360L514 0M690 360L1044 6M844 360L1044 160" stroke="#cbd2c4" fill="none"/>
+  <rect x="260" y="50" width="540" height="270" rx="18" fill="#afb9a8"/>
+  <rect x="252" y="42" width="540" height="270" rx="18" fill="#faf8f2" stroke="#a8b3a0"/>
+  <path d="M252 94h540" stroke="#d2d8cc"/>
+  <circle cx="279" cy="68" r="4" fill="#85947d"/><circle cx="293" cy="68" r="4" fill="#85947d"/><circle cx="307" cy="68" r="4" fill="#85947d"/>
+  <text x="303" y="132" font-size="23" font-weight="600" fill="#30382c">Daykeeper</text>
+  <rect x="303" y="164" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="367" y="164" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="431" y="164" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="495" y="164" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="559" y="164" width="54" height="29" rx="5" fill="#85947d"/><rect x="623" y="164" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="687" y="164" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="303" y="202" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="367" y="202" width="54" height="29" rx="5" fill="#85947d"/><rect x="431" y="202" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="495" y="202" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="559" y="202" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="623" y="202" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="687" y="202" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="303" y="240" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="367" y="240" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="431" y="240" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="495" y="240" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="559" y="240" width="54" height="29" rx="5" fill="#e4e7dd"/><rect x="623" y="240" width="54" height="29" rx="5" fill="#85947d"/><rect x="687" y="240" width="54" height="29" rx="5" fill="#e4e7dd"/>
+</svg>
