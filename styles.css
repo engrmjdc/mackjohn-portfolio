@@ -30,8 +30,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .nav-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; text-decoration: none; font-size: .875rem; font-weight: 600; }
 .nav-links a { padding-inline: .85rem; border-radius: 999px; }
 .nav-links a:hover, .nav-links a:focus-visible { background: #edf0e7; }
-.footer div { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
-.footer a:hover { text-decoration: underline; }
 .hero { padding-block: clamp(2.75rem, 6vw, 5.25rem) clamp(2rem, 5vw, 4.5rem); }
 .hero h1 span { color: var(--accent); }
 .hero-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1.5rem; border-top: 1px solid var(--line); margin-top: 1.65rem; padding-top: .85rem; font-size: .83rem; font-weight: 600; }
@@ -87,6 +85,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .contact h2 { margin-bottom: 1rem; }
 .contact { background: var(--ink); color: var(--paper); }
 .contact .eyebrow, .contact a { color: #dce1d5; }
+.contact-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem 1.25rem; }
 .contact a { overflow-wrap: anywhere; }
 .footer { border-top: 1px solid var(--line); padding-block: 1.5rem; flex-wrap: wrap; font-size: .9rem; }
 @media (max-width: 720px) {
