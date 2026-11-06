@@ -38,7 +38,18 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .hero-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); align-items: center; gap: 2rem; margin-top: clamp(2rem, 5vw, 4rem); }
 .hero-intro h2 { font-size: clamp(2rem, 4vw, 3.6rem); }
 .hero-intro p { margin-block: 1rem; max-width: 42ch; }
-.hero-intro img { display: block; width: 100%; height: auto; }
+.hero-portrait {
+  width: min(100%, 24rem);
+  justify-self: end;
+  perspective: 850px;
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .45rem;
+  box-shadow: 0 16px 35px #292b271a;
+}
 .hero-action { display: inline-flex; gap: .75rem; align-items: center; background: var(--ink); color: var(--paper); padding: .65rem 1rem; text-decoration: none; }
 .hero-action:hover { background: var(--accent); }
 .eyebrow { color: var(--accent); font-size: .73rem; font-weight: 750; letter-spacing: .14em; }
@@ -81,7 +92,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 @media (max-width: 720px) {
   .shell { width: calc(100% - 2rem); }
   .projects, .studies, .about, .hero-intro { grid-template-columns: 1fr; }
-  .hero-intro img { display: none; }
+  .hero-portrait { justify-self: start; width: min(100%, 20rem); }
 }
 @media (max-width: 600px) {
   html { scroll-padding-top: 8rem; }
@@ -98,4 +109,11 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   .project:focus-within .project-image { transform: translateY(-4px); }
   .revealed { animation: reveal 240ms ease-out both; }
   @keyframes reveal { from { opacity: .55; transform: translateY(9px); } to { opacity: 1; transform: none; } }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .hero-portrait img {
+    transform: rotateX(var(--portrait-x, 0deg)) rotateY(var(--portrait-y, 0deg));
+    transition: transform 220ms ease-out;
+  }
 }
