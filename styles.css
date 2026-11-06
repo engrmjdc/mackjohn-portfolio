@@ -21,11 +21,21 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .site-header { position: sticky; z-index: 2; top: 0; background: var(--paper); border-bottom: 1px solid var(--line); }
 .nav, .footer { display: flex; align-items: center; justify-content: space-between; gap: .5rem 1.5rem; }
 .nav { min-height: 4.5rem; }
-.wordmark { font-weight: 700; text-decoration: none; }
+.wordmark { display: inline-flex; align-items: center; gap: .65rem; font-weight: 700; text-decoration: none; }
+.wordmark img { display: block; flex: none; }
 .nav-links, .footer div { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
 .nav-links a { display: inline-flex; min-height: 2.75rem; align-items: center; text-decoration: none; }
 .nav-links a:hover, .footer a:hover { text-decoration: underline; }
-.hero { padding-block: clamp(5rem, 12vw, 10rem); display: grid; gap: 1.4rem; justify-items: start; }
+.hero { position: relative; isolation: isolate; padding-block: clamp(5rem, 12vw, 10rem); display: grid; gap: 1.4rem; justify-items: start; }
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  inset: 42% 0 3% auto;
+  width: min(41%, 27rem);
+  background: url("assets/hero-path.svg") center / contain no-repeat;
+}
 .hero > p:not(.eyebrow) { font-size: clamp(1.05rem, 2vw, 1.3rem); max-width: 49ch; }
 .eyebrow { color: var(--accent); font-size: .73rem; font-weight: 750; letter-spacing: .14em; }
 .text-link { color: var(--accent); font-weight: 650; }
@@ -44,11 +54,20 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .contact h2 { margin-bottom: 1rem; }
 .contact a { overflow-wrap: anywhere; }
 .footer { border-top: 1px solid var(--line); padding-block: 1.5rem; flex-wrap: wrap; font-size: .9rem; }
+@media (max-width: 900px) {
+  .hero::before {
+    inset: auto -2% 0 auto;
+    width: min(50%, 20rem);
+    aspect-ratio: 17 / 10;
+    opacity: .42;
+  }
+}
 @media (max-width: 720px) {
   .shell { width: calc(100% - 2rem); }
   .project, .studies, .about { grid-template-columns: 1fr; }
 }
 @media (max-width: 420px) {
+  .hero::before { opacity: .27; }
   .nav { flex-wrap: wrap; gap: 0 1rem; padding-top: .55rem; }
   .nav-links { gap: .25rem 1rem; }
 }
