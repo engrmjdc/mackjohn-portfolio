@@ -50,8 +50,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   border-radius: .45rem;
   box-shadow: 0 16px 35px #292b271a;
 }
-.hero-action { display: inline-flex; gap: .75rem; align-items: center; background: var(--ink); color: var(--paper); padding: .65rem 1rem; text-decoration: none; }
-.hero-action:hover { background: var(--accent); }
+.text-link.hero-action { display: inline-flex; gap: .75rem; align-items: center; background: var(--ink); color: var(--paper); padding: .65rem 1rem; text-decoration: none; }
+.hero-action:hover, .hero-action:focus-visible { background: var(--accent); }
 .eyebrow { color: var(--accent); font-size: .73rem; font-weight: 750; letter-spacing: .14em; }
 .text-link { color: var(--accent); font-weight: 650; }
 .section { padding-block: clamp(3rem, 8vw, 6rem); border-top: 1px solid var(--line); }
