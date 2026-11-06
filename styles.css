@@ -27,11 +27,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .brand-copy strong { font-size: .94rem; letter-spacing: -.025em; }
 .brand-copy small { color: var(--accent); font-size: .72rem; }
 .nav-links { display: flex; align-items: center; gap: .15rem; padding: .15rem; border: 1px solid var(--line); border-radius: 999px; }
-.nav-links a, .nav-contact { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; text-decoration: none; font-size: .875rem; font-weight: 600; }
+.nav-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; text-decoration: none; font-size: .875rem; font-weight: 600; }
 .nav-links a { padding-inline: .85rem; border-radius: 999px; }
 .nav-links a:hover, .nav-links a:focus-visible { background: #edf0e7; }
-.nav-contact { gap: .55rem; padding-inline: .95rem; border-radius: .35rem; background: var(--ink); color: var(--paper); }
-.nav-contact:hover, .nav-contact:focus-visible { background: var(--accent); }
 .footer div { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
 .footer a:hover { text-decoration: underline; }
 .hero { padding-block: clamp(2.75rem, 6vw, 5.25rem) clamp(2rem, 5vw, 4.5rem); }
@@ -87,13 +85,13 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 }
 @media (max-width: 600px) {
   html { scroll-padding-top: 8rem; }
-  .nav { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem .65rem; padding-block: .55rem .3rem; }
-  .nav-links { grid-column: 1 / -1; grid-row: 2; justify-content: center; border: 0; border-top: 1px solid var(--line); border-radius: 0; }
-  .nav-contact { grid-column: 2; grid-row: 1; padding-inline: .65rem; }
+  .nav { flex-direction: column; align-items: stretch; gap: .35rem; padding-block: .55rem .3rem; }
+  .nav-links { justify-content: space-evenly; border: 0; border-top: 1px solid var(--line); border-radius: 0; }
+  .nav-links a { padding-inline: .45rem; }
   .brand-copy strong { font-size: .85rem; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .nav-links a, .nav-contact { transition: background-color 150ms ease; }
+  .nav-links a { transition: background-color 150ms ease; }
   @media (hover: hover) {
     .project:hover .project-image { transform: translateY(-4px); box-shadow: 0 10px 24px #2933261a; }
   }
