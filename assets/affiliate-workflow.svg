@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1044 360" font-family="system-ui,sans-serif">
+  <rect width="1044" height="360" fill="#dce1d5"/>
+  <path d="M0 360L360 0M154 360L514 0M690 360L1044 6M844 360L1044 160" stroke="#cbd2c4" fill="none"/>
+  <rect x="187" y="81" width="686" height="214" rx="18" fill="#afb9a8"/>
+  <rect x="179" y="73" width="686" height="214" rx="18" fill="#faf8f2" stroke="#a8b3a0"/>
+  <path d="M179 124h686" stroke="#d2d8cc"/>
+  <g fill="#85947d"><circle cx="207" cy="99" r="4"/><circle cx="221" cy="99" r="4"/><circle cx="235" cy="99" r="4"/></g>
+  <text x="219" y="159" font-size="21" font-weight="600" fill="#30382c">Affiliate content workflow</text>
+  <path d="M349 218H695" stroke="#85947d" stroke-width="2" stroke-dasharray="4 5"/>
+  <g fill="#e4e7dd"><rect x="219" y="194" width="130" height="48" rx="7"/><rect x="378" y="194" width="130" height="48" rx="7"/><rect x="537" y="194" width="130" height="48" rx="7"/></g>
+  <rect x="695" y="194" width="130" height="48" rx="7" fill="#52624a"/>
+  <g text-anchor="middle" font-size="15" fill="#30382c">
+    <text x="284" y="224">Product data</text><text x="443" y="224">Validate</text><text x="602" y="224">Generate</text><text x="760" y="224" fill="#faf8f2">Review</text>
+  </g>
+</svg>

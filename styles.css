@@ -47,7 +47,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .project-image { display: block; border-radius: .45rem; overflow: hidden; transition: transform 180ms ease, box-shadow 180ms ease; }
 .project-image img { display: block; width: 100%; height: auto; }
 .project-copy, .studies article { display: grid; gap: .75rem; justify-items: start; }
-.studies { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.studies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
 .studies article { border-top: 1px solid var(--line); padding-top: 1.25rem; align-content: start; }
 .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 1.5rem 3rem; }
 .about p:not(.eyebrow) { max-width: 58ch; margin-bottom: 1rem; }
