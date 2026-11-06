@@ -66,7 +66,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   .shell { width: calc(100% - 2rem); }
   .project, .studies, .about { grid-template-columns: 1fr; }
 }
-@media (max-width: 420px) {
+@media (max-width: 520px) {
   .hero::before { opacity: .27; }
   .nav { flex-wrap: wrap; gap: 0 1rem; padding-top: .55rem; }
   .nav-links { gap: .25rem 1rem; }
